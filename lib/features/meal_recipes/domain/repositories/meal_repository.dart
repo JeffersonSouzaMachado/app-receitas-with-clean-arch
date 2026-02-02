@@ -12,4 +12,6 @@ abstract class MealRepository {
   Future<List<MealDetail>> getFavoriteMeals();
 
   Future<MealDetail> getRandomMeal();
+
+  Future<bool> checkIfMealIsFavorite();
 }
