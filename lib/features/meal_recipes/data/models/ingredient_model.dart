@@ -7,6 +7,7 @@ class IngredientModel extends Ingredient {
     return IngredientModel(name: name, measure: measure);
   }
 
-
-  
+  Map<String, dynamic> toJson() {
+    return {'name': name, 'measure': measure};
+  }
 }
